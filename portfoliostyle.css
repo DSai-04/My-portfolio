@@ -4,11 +4,13 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
-  background-color: #0a0f24;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background-size: cover;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #0d1b36;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 15px 20px;
   position: fixed;
   top: 0;
@@ -25,7 +27,7 @@ header nav {
 
 header .logo {
   font-size: 24px;
-  color: #4fa7f6;
+  color: #fbc531;
   font-weight: bold;
 }
 
@@ -37,43 +39,50 @@ header .logo {
 
 .nav-links li a {
   text-decoration: none;
-  color: #4fa7f6;
+  color: #f5f6fa;
   font-weight: bold;
+  padding: 8px 15px;
+  transition: background 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #87c3ff;
+  background: #fbc531;
+  color: #2f3640;
+  border-radius: 5px;
 }
 
 .menu-toggle {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: #4fa7f6;
+  color: #f5f6fa;
 }
 
 /* Sections */
 .section {
   padding: 100px 20px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 80px auto 20px auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 h2 {
   text-align: center;
-  color: #4fa7f6;
+  color: #fbc531;
   margin-bottom: 20px;
 }
 
 .project-card {
-  background-color: #1a2d4e;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
 }
 
 .project-card h3 {
-  color: #87c3ff;
+  color: #4cd137;
 }
 
 .education-list {
@@ -82,30 +91,30 @@ h2 {
 }
 
 .education-list li {
-  background-color: #1a2d4e;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 8px;
 }
 
 footer {
-  background-color: #0d1b36;
+  background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 15px 0;
   margin-top: 20px;
 }
 
 footer p {
-  color: #87c3ff;
+  color: #fbc531;
 }
 
 a {
-  color: #4fa7f6;
+  color: #fbc531;
   text-decoration: none;
 }
 
 a:hover {
-  color: #87c3ff;
+  color: #4cd137;
 }
 
 /* Responsive Design */
@@ -117,12 +126,13 @@ a:hover {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #0d1b36;
+    background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 50px;
     right: 20px;
     width: 200px;
     padding: 10px;
+    border-radius: 8px;
   }
 
   .nav-links.active {
@@ -133,3 +143,4 @@ a:hover {
     margin: 10px 0;
   }
 }
+
