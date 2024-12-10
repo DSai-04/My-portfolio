@@ -5,52 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Divya Sai Vasa - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="header-container">
-      <img src="IMG_2.jpg" alt="Divya Sai Vasa" class="profile-img">
-      <h1>Divya Sai Vasa</h1>
-      <p>ECIL, Hyderabad | vasadivyasai@gmail.com | +91 8790719654</p>
-    </div>
+    <nav>
+      <div class="logo">Divya Sai Vasa</div>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
   </header>
   <main>
-    <section id="about">
+    <section id="about" class="section">
       <h2>About Me</h2>
-      <p>I am an MCA student with a passion for software development. I aim to leverage my skills in Java, SQL, and web development to contribute to impactful projects and achieve organizational success.</p>
+      <p>I am an enthusiastic fresher pursuing an MCA and proficient in Java, SQL, HTML, and CSS. My goal is to work on innovative software solutions and contribute to impactful projects.</p>
     </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Java</li>
-        <li>SQL</li>
-        <li>HTML & CSS</li>
-        <li>Object-Oriented Programming</li>
-      </ul>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Credit Card Fraud Detection</h3>
+        <p><strong>Technologies:</strong> Java, HMM, Naive Bayes, MySQL</p>
+        <p>A system to detect fraudulent credit card transactions using machine learning models.</p>
+      </div>
     </section>
-    <section id="education">
+
+    <section id="education" class="section">
       <h2>Education</h2>
-      <ul>
-        <li><strong>MCA:</strong> Osmania University (2022–2024) - CGPA: 8.0</li>
-        <li><strong>B.Sc in Computer Science:</strong> Sardar Patel Degree College (2019–2022) - CGPA: 8.93</li>
-        <li><strong>Intermediate:</strong> Gitam Junior College (2017–2019) - Marks: 879</li>
-        <li><strong>SSC:</strong> Sri Nalanda Grammar High School (2017) - CGPA: 9.2</li>
+      <ul class="education-list">
+        <li>
+          <strong>MCA:</strong> University PG College, Secunderabad (2022–2024)
+        </li>
+        <li>
+          <strong>BSc in Computer Science:</strong> Sardar Patel Degree College (2019–2022) - CGPA: 8.93
+        </li>
+        <li>
+          <strong>Intermediate:</strong> Gitam Junior College (2017–2019) - Marks: 879
+        </li>
+        <li>
+          <strong>SSC:</strong> Sri Nalanda Grammar High School (2017) - CGPA: 9.2
+        </li>
       </ul>
     </section>
-    <section id="project">
-      <h2>Project</h2>
-      <h3>Credit Card Fraud Detection System</h3>
-      <p><strong>Technologies:</strong> Java, HMM, Naive Bayes, MySQL</p>
-      <p>Description: A system that detects fraudulent transactions by combining Hidden Markov Models (HMM) and Naive Bayes for sequential analysis and probabilistic classification, respectively.</p>
-    </section>
-    <section id="contact">
+
+    <section id="contact" class="section">
       <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:vasadivyasai@gmail.com">vasadivyasai@gmail.com</a></p>
-      <p>Phone: <a href="tel:+918790719654">+91 8790719654</a></p>
+      <p><strong>Email:</strong> <a href="mailto:vasadivyasai@gmail.com">vasadivyasai@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+918790719654">+91 8790719654</a></p>
     </section>
   </main>
   <footer>
-    <p>© 2024 Divya Sai Vasa</p>
+    <p>© 2024 Divya Sai Vasa | All Rights Reserved</p>
   </footer>
 </body>
 </html>
+
